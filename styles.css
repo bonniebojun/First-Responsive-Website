@@ -1,72 +1,100 @@
-
 body {
+ margin: 20px;
+}
 
+header {
+  display: flex;
+  justify-content: center;
+  height: 650px;
+  align-items: center;
+  background-color: rgb(95, 214, 204); 
 }
-.top-container {
-    background-color: aqua;
-    height: 600px;
-    font-size: 11pt;
-  
-}
+
 .text-center {
-    font-size: 5em;
-    color: white;
-    position: absolute;
-    display: center;
-    font: 15pt;
-    top: 15%;
-    right: 20%;
-    left: 20%;
-}
-.img {
-  width: 200%;
-}
-
-.bottom-container {
-    height: 450px;
-    font-size: 1em;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex; 
+  color: white;
+  font-size: 75pt;
+  display: center;
+  font-family: 'Anton', sans-serif;
 
 }
-.left-column {
-   background-color: rgb(150, 150, 10);
-    height: 100%;
-    width: 100%;
+
+.body-container {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  height: 500px;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  text-align: center;
 
 }
-.img {
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  margin: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
   
+}
+h2 {
+  padding: 25%;
+  padding-top: 60px;
+  padding-left: 100px;
+  text-align: center;
+  font-size: 55px;
+  border-top: 30px solid;
+  border-bottom: 30px solid;
+  border-left: 30px solid;
+  border-right:30px solid;
+  border-width: 5px;
+  font-family: font-family: 'Playball', cursive;
+
+  
 
 }
 
-.middle-column {
-    background-color: orange;
-    height: 100%;
-    width: 100%;
-}   
-.right-column {
-    background-color: blueviolet;
-    height: 100%;
-    width: 100%;
+.title-left {
+  border-color: pink;
+  
 }
-@media (max-width: 800px) {
-    .bottom-container {
+.title-middle {
+  border-color: rgb(197, 236, 197);
+
+}
+.title-right {
+  border-color: rgb(224, 188, 120);
+}
+article {
+  width: 300px;
+  color: white;
+
+}
+p {
+  color: rgb(228, 201, 201);
+  font-size: 18px; 
+  font-family: 'Playball', cursive;
+  }
+
+
+@media (max-width: 900px){
+  section {
     flex-direction: column;
-   
-    }
-    .right-column {
-      width: 100%;
-    }
-    .middle-column {
-      width: 100%;
-    }
-    .left-column {
-      width: 100%;
-    }
-        
-    
-    
-    }
-    }
+    align-items: center;
+  }
+
+header {
+
+height: 300%;
+}
+
+.text-center {
+  display: wrap;
+  padding: 20%;
+}
+.body-container {
+  height: 700%; 
+  flex: wrap;
+  padding-bottom: 10%;
+  
+}
